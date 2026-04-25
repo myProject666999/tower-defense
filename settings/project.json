@@ -1,0 +1,84 @@
+{
+  "engine-version": "3.6.0",
+  "excluded-modules": [],
+  "script": {
+    "scriptConfig": {
+      "entry": "application"
+    },
+    "scriptExtension": {
+      "classTemplate": "",
+      "componentTemplate": ""
+    }
+  },
+  "module": {
+    "includeModules": [],
+    "baseModules": [
+      "2d",
+      "3d",
+      "base",
+      "animation",
+      "audio",
+      "physics",
+      "tween",
+      "ui",
+      "particle",
+      "physics-2d",
+      "spine",
+      "terra"
+    ]
+  },
+  "group": {
+    "groups": [
+      "default",
+      "ui"
+    ],
+    "index": 2
+  },
+  "collision-matrix": [
+    [
+      true
+    ],
+    [
+      true,
+      false
+    ]
+  ],
+  "layers": {
+    "layer_2d": 33554432,
+    "layer_ui_2d": 67108864,
+    "layer_ui_3d": 1073741824
+  },
+  "customLayers": [
+    {
+      "name": "UI_2D",
+      "value": 26
+    },
+    {
+      "name": "UI_3D",
+      "value": 30
+    }
+  ],
+  "physics": {
+    "allowSleep": true,
+    "fixedTimeStep": 0.02,
+    "gravity": {
+      "x": 0,
+      "y": -10,
+      "z": 0
+    },
+    "maxSubSteps": 1,
+    "type": "built-in"
+  },
+  "physics-2d": {
+    "type": "box2d",
+    "gravity": {
+      "x": 0,
+      "y": -10
+    },
+    "allowSleep": true,
+    "fixedTimeStep": 0.02,
+    "maxSubSteps": 1,
+    "velocityIterations": 8,
+    "positionIterations": 3
+  }
+}

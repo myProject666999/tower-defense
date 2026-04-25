@@ -1,0 +1,72 @@
+# Cocos Creator 3.8.x 专用忽略规则
+# 基础通用忽略（跨平台/编辑器）
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# ====================== Cocos Creator 3.8.x 核心忽略 ======================
+# 编辑器缓存/编译中间产物
+library/
+temp/
+# 构建产物目录（3.x 构建输出默认在 build 下）
+build/
+# 本地配置（包含个人路径、账号、编辑器偏好设置）
+local/
+# 插件缓存/下载产物
+packages/
+# 3.x 新增的类型声明自动生成文件
+creator.d.ts
+# 3.x 构建临时缓存
+.creator/
+# 3.x 编辑器状态文件
+.editor/
+# 3.x 元数据缓存（部分版本会生成）
+.meta-cache/
+
+# ====================== 开发依赖/编译产物 ======================
+# npm/yarn 依赖（通过 package.json 还原）
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# pnpm 存储目录
+.pnpm-store/
+# yarn 缓存
+.yarn/
+
+# ====================== 语言相关产物 ======================
+# TypeScript 编译产物（3.x 主流用 TS 开发）
+*.js
+*.js.map
+*.d.ts.bak
+!assets/**/*.js
+!assets/**/*.js.map
+!assets/**/*.d.ts
+!extensions/**/*.js
+!extensions/**/*.js.map
+!extensions/**/*.d.ts
+
+# ====================== 发布/测试相关 ======================
+# 发布包体/测试包
+publish/
+release/
+# 构建报告
+build-report.html
+build-report.json
+# 远程调试日志
+remote-debugger.log
+
+# ====================== 自定义忽略（可根据项目补充） ======================
+# 例如：
+# 项目本地测试资源
+# test-res/
+# 个人调试脚本
+# debug-scripts/
+# 第三方 SDK 本地调试包
+# sdk-local/

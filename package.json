@@ -1,0 +1,10 @@
+{
+  "name": "tower-defense",
+  "uuid": "100177d0-6320-4591-973f-4b6a733a49a8",
+  "version": "3.6.0",
+  "creator": {
+    "version": "3.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
